@@ -143,6 +143,7 @@ kurtosis(log(redWine$residual.sugar))
 redWine$residual.sugar <- log(redWine$residual.sugar)
 
 #chlorides. Parece correcto
+#red wine mejora
 hist(whiteWine$chlorides)
 hist(log(whiteWine$chlorides))
 skewness(whiteWine$chlorides)
@@ -222,6 +223,7 @@ kurtosis(redWine$pH)
 kurtosis(log(redWine$pH))
 
 #sulphates. Mejora al aplicar el log
+#mejora ambos
 hist(whiteWine$sulphates)
 hist(log(whiteWine$sulphates))
 skewness(whiteWine$sulphates)
@@ -239,6 +241,8 @@ kurtosis(log(redWine$sulphates))
 redWine$sulphates <- log(redWine$sulphates)
 
 #alcohol
+#whitewine mejora
+# red wine no mejora
 hist(whiteWine$alcohol)
 hist(log(whiteWine$alcohol))
 skewness(whiteWine$alcohol)
